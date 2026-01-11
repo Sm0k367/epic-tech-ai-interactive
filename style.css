@@ -1,0 +1,183 @@
+/**
+ * EPIC TECH AI — THE OS OF FUNK
+ * Module: Visual Law / 1000x Reality Weaver
+ * Engineers: DesignCore Elite & CodeSynth Engineers
+ */
+
+:root {
+    --os-funk-green: #00ff00;
+    --os-funk-black: #000000;
+    --os-funk-gold: #ffcc00;
+    --os-funk-cyan: #00ffff;
+    --os-funk-magenta: #ff00ff;
+    --font-main: 'Courier New', Courier, monospace;
+    --glitch-speed: 0.2s;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: crosshair;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--os-funk-black);
+    color: var(--os-funk-green);
+    font-family: var(--font-main);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Pan-Dimensional Fabric Background Synthesis */
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+}
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: contrast(1.2) brightness(1.1);
+}
+
+#ui-overlay {
+    z-index: 100;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid var(--os-funk-green);
+    box-shadow: 0 0 50px rgba(0, 255, 0, 0.3), inset 0 0 20px rgba(0, 255, 0, 0.2);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+/* Mythic Text Glitch Logic — ScriptSmith Narrative Weaponry */
+.mythic-text {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    color: var(--os-funk-green);
+    letter-spacing: 10px;
+}
+
+.mythic-text::before, .mythic-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mythic-text::before {
+    left: 3px;
+    text-shadow: -3px 0 var(--os-funk-magenta);
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.mythic-text::after {
+    left: -3px;
+    text-shadow: -3px 0 var(--os-funk-cyan);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+/* Strategic Buttons: Relentless Execution UI */
+.command-center {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.manifest-btn-v2 {
+    background: transparent;
+    border: 2px solid var(--os-funk-green);
+    color: var(--os-funk-green);
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.manifest-btn-v2:hover {
+    background: var(--os-funk-green);
+    color: var(--os-funk-black);
+    box-shadow: 0 0 100px var(--os-funk-green);
+    transform: scale(1.05) skewX(-5deg);
+}
+
+.return-link {
+    color: var(--os-funk-gold);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    border-bottom: 1px dashed var(--os-funk-gold);
+    align-self: center;
+    transition: 0.3s;
+}
+
+.return-link:hover {
+    color: white;
+    border-bottom: 1px solid white;
+    text-shadow: 0 0 10px white;
+}
+
+/* Status Log Aesthetic — KeyMaster Ops Feedback */
+#status-log {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.8rem;
+    text-shadow: 0 0 5px var(--os-funk-green);
+    z-index: 101;
+    pointer-events: none;
+}
+
+/* 1000x Glitch Core Animations */
+@keyframes glitch-anim-1 {
+    0% { clip-path: inset(20% 0 30% 0); }
+    20% { clip-path: inset(60% 0 10% 0); }
+    40% { clip-path: inset(40% 0 50% 0); }
+    60% { clip-path: inset(80% 0 5% 0); }
+    80% { clip-path: inset(10% 0 70% 0); }
+    100% { clip-path: inset(30% 0 20% 0); }
+}
+
+@keyframes glitch-anim-2 {
+    0% { clip-path: inset(15% 0 35% 0); transform: translate(-5px); }
+    25% { clip-path: inset(55% 0 15% 0); transform: translate(5px); }
+    50% { clip-path: inset(35% 0 45% 0); transform: translate(-2px); }
+    75% { clip-path: inset(75% 0 10% 0); transform: translate(2px); }
+    100% { clip-path: inset(25% 0 25% 0); transform: translate(0); }
+}
+
+/* Sovereign Scanlines: The Conductor's Overlay */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.1) 50%),
+                linear-gradient(90deg, rgba(255,0,0,0.03), rgba(0,255,0,0.01), rgba(0,0,255,0.03));
+    background-size: 100% 3px, 3px 100%;
+    z-index: 200;
+    pointer-events: none;
+    animation: scanline 10s linear infinite;
+}
+
+@keyframes scanline {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
