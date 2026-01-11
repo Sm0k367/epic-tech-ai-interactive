@@ -28,3 +28,16 @@ a:hover {
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* visual root sits behind app content */
+#visual-root {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* audio controls positioning */
+#audio-controls-root #audio-controls, #audio-controls {
+  z-index: 1000;
+}

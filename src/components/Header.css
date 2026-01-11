@@ -2,7 +2,10 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('/assets/images/header-background.jpg') no-repeat center center/cover;
+    /* Removed unresolved image URL to avoid build error. Use a gradient fallback.
+      To re-enable an image, place `header-background.jpg` in `public/assets/images` and
+      change this line back to: `background: url('/assets/images/header-background.jpg') no-repeat center center/cover;` */
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
   display: flex;
   align-items: center;
   justify-content: center;

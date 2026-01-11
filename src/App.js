@@ -11,6 +11,8 @@ function App() {
       <Header />
       <MainContent />
       <Footer />
+      <div id="visual-root" />
+      <div id="audio-controls-root" />
       <VisualEffects />
       <AudioEffects />
     </div>
