@@ -1,0 +1,52 @@
+.main-content {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 2rem);
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
